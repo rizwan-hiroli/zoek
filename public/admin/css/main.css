@@ -1,0 +1,271 @@
+.mt30{
+		margin-top: 30px;
+	}
+.remove{
+	padding: 0px;
+    margin-top: -31px;
+}
+.required{
+	color:red;
+}
+.commonError{
+	color:red;
+}
+.status-span{
+	cursor:pointer;
+}
+
+
+/*link view for toast*/
+.toast-link{
+	color:#fff;
+	text-decoration: underline;
+}
+
+
+/*making background blur when toast appears*/
+.fadeBg{
+	position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*changing defult close icon of lightbox*/
+/*.lb-data .lb-close {
+    top: -40px;
+    margin-left: -50px;
+    position: absolute;
+    float: right;
+}*/
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.padding-left-0{
+    padding-left:0px;
+}
+
+/*Adding class to validation error*/
+.validation-error{
+    color: #E74C3C;
+    font-weight: 700;
+}
+
+
+.padding-top-5{
+    padding-top:5px;
+}
+
+.margin-left-18{
+    margin-left: -18px
+}
+.datepicker {
+    padding: 6px 12px !important;
+}
+label.error{
+    color: #E74C3C;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* background: rgba(0,0,0,0.85); */
+    background: #ffffff;
+    z-index: 9999999999;
+}
+.spinner {
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    position: relative;
+    margin: 0 auto;
+    background: url(../images/wedges.gif);
+    background-size: cover;
+}
+.lb-next{
+    opacity: 1 !important;
+}
+.lb-prev{
+    opacity: 1 !important;
+}
+/*footer color inverted*/
+.invert-footer{
+    color: white;
+    background: #2A3F54
+}
+.file-error-div{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+footer{
+    margin-left: 0px !important;
+    bottom:0;
+    width:100%;
+    position:absolute; 
+}
+body{
+     position: relative;
+    padding-bottom: 5em;
+    overflow-y: scroll;
+}
+.lb-closeContainer{
+    position: relative;
+    left: 10px;
+    padding-bottom: 40px;
+}
+
+.instruction-div{
+    font-weight: 400; 
+    display: block;
+    color: #999;
+}
+
+.list-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    font-size: 2.5rem;
+    color: #5a738e;
+    border-style: dashed;
+    border: 1px #5a738e solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+.margin10Px{
+    margin-top: 10px;
+}
+
+.extendedText{
+   overflow: hidden !important;
+   white-space: nowrap !important;
+   text-overflow: ellipsis!important;
+   width:100px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content:'';
+    height: 13px;
+    width: 14px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3CB371;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3CB371;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  table.dataTable.nowrap th, table.dataTable.nowrap td {
+    white-space: unset !important;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 11px 55px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 0px;
+    background-color: rgb(107, 71, 101);
+    color: white;
+    margin-left: -22px;
+    margin-top: 25px;
+}
+
+
+.yellow{
+    color:#f67514;
+}
+
+.img-circle.profile_img {
+    width: 90%;
+    background: none;
+    margin-left: 5%;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 20px;
+    border :none;
+    padding: 4px;
+}
+
+.btn-circle.btn-sm { 
+  width: 30px; 
+  height: 30px; 
+  padding: 6px 0px; 
+  border-radius: 15px; 
+  font-size: 12px; 
+  text-align: center; 
+} 
