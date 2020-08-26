@@ -51,39 +51,8 @@ class EmployeeController extends Controller
      */
     public function index(Request $request)
     {
-
-        //Disallowing user to access students
-        // if(auth()->user()->role == 'STUDENT'){
-        //     abort(401);
-        // }
-
         $listViewheaders = $this->listViewheaders;
         $data = Employee::withTrashed()->paginate(self::PAGINAION_VALUE);
-        // $listViewheaders['standards'] = Standard::select('name','id')->get()->toArray();
-        // $listViewheaders['divisions'] = Division::select('name','id')->get()->toArray();
-        if ($request->ajax()) {
-            // $categoryId = $request->category;
-            // $subCategoryId = $request->sub_category; 
-            // $filters = ['school_id'=>auth()->user()->school_id,'role'=>'STUDENT',
-            //             // 'std_id'=>$categoryId,'div_id'=>$subCategoryId];
-
-            // if(auth()->user()->role == 'TEACHER'){
-            //     $filters['std_id'] = auth()->user()->std_id;
-            // }
-                      
-            $data = Employee::withTrashed()->get();
-            $actionUrl = 'employee';
-            return Datatables::of($data)
-                    ->addColumn('action', function($row) use($actionUrl){
-                    return view('admin.partials.action',compact('row','actionUrl'));
-                    })                 
-                    ->addColumn('status', function($row){
-                    return view('admin.partials.status',compact('row'));
-                    })
-                    ->setRowId('id')
-                    ->rawColumns(['status','action','profile_image_url'])
-                    ->make(true);
-        }   
         return view('admin.employee.employee-list',compact('listViewheaders','data'));      
     }
 
